@@ -26,8 +26,8 @@ public class Auditorio implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String brand;
-    private Integer year;
+    private String categoria;
+    private Integer capacity;
     private String description;
 
     @ManyToOne
@@ -59,22 +59,21 @@ public class Auditorio implements Serializable {
         this.name = name;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void set(String categoria) {
+        this.categoria = categoria;
     }
 
-    public Integer getYear() {
-        return year;
+    public Integer getCapacity() {
+        return capacity;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
     }
-
     public String getDescription() {
         return description;
     }
