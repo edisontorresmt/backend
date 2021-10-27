@@ -63,7 +63,7 @@ public class Auditorio implements Serializable {
         return categoria;
     }
 
-    public void set(String categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 
