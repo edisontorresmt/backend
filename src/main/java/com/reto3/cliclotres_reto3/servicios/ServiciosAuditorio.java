@@ -45,11 +45,11 @@ public class ServiciosAuditorio {
                 if(auditorio.getName()!=null){
                     e.get().setName(auditorio.getName());
                 }
-                if(auditorio.getBrand()!=null){
-                    e.get().setBrand(auditorio.getBrand());
+                if(auditorio.getCategoria()!=null){
+                    e.get().setCategoria(auditorio.getCategoria());
                 }
-                if(auditorio.getYear()!=null){
-                    e.get().setYear(auditorio.getYear());
+                if(auditorio.getCapacity()!=null){
+                    e.get().setCapacity(auditorio.getCapacity());
                 }
                 if(auditorio.getDescription()!=null){
                     e.get().setDescription(auditorio.getDescription());
