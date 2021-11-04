@@ -26,12 +26,11 @@ public class Auditorio implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String categoria;
     private Integer capacity;
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "categoryId")
+    @JoinColumn(name = "Id",insertable=false,update=false)
     @JsonIgnoreProperties("audiences")
     private Categoria category;
 
