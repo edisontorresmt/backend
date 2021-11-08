@@ -10,7 +10,7 @@ import com.reto3.cliclotres_reto3.repositorio.RepositorioCategoria;
 
 
 @Service
-public class ServiciosCategoria {
+public class  ServiciosCategoria {
     @Autowired
     private RepositorioCategoria metodosCrud;
 

@@ -32,6 +32,7 @@ public class Mensaje implements Serializable {
     @JsonIgnoreProperties({"messages", "client", "reservations"})
     private Auditorio audience;
 
+    @ManyToOne
     @JoinColumn(name="clientId")
     @JsonIgnoreProperties({"messages", "reservations", "client"})
     private Cliente client;

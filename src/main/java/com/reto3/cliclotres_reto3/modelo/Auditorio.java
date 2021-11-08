@@ -30,7 +30,7 @@ public class Auditorio implements Serializable {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "Id",insertable=false,update=false)
+    @JoinColumn(name = "Id",insertable=false,updatable = false)
     @JsonIgnoreProperties("audiences")
     private Categoria category;
 
@@ -58,13 +58,7 @@ public class Auditorio implements Serializable {
         this.name = name;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
 
     public Integer getCapacity() {
         return capacity;

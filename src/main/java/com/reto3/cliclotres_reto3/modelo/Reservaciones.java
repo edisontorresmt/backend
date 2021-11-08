@@ -5,6 +5,7 @@
 package com.reto3.cliclotres_reto3.modelo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+////
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;
@@ -21,7 +22,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "reservation")
-public class Reservaciones implements Serializable  {
+public class Reservaciones implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
