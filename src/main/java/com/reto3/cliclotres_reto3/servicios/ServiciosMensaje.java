@@ -13,7 +13,7 @@ import com.reto3.cliclotres_reto3.repositorio.RepositorioMensaje;
 
 /**
  *
- * @author USUARIO
+ * @author USUARIO hola
  */
 @Service
 public class ServiciosMensaje {
@@ -33,7 +33,7 @@ public class ServiciosMensaje {
             return metodosCrud.save(message);
         }else{
             Optional<Mensaje> e= metodosCrud.getMessage(message.getIdMessage());
-            if(e.isPresent()){
+            if(!e.isEmpty()){
                 return metodosCrud.save(message);
             }else{
                 return message;

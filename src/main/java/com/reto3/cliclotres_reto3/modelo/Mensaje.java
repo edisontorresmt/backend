@@ -68,7 +68,4 @@ public class Mensaje implements Serializable {
     public void setClient(Cliente client) {
         this.client = client;
     }
-
-
-
 }
