@@ -45,6 +45,9 @@ public class ServiciosAuditorio {
                 if(auditorio.getName()!=null){
                     e.get().setName(auditorio.getName());
                 }
+                if(auditorio.getOwner()!=null){
+                    e.get().setOwner(auditorio.getOwner());
+                }
 
                 if(auditorio.getCapacity()!=null){
                     e.get().setCapacity(auditorio.getCapacity());

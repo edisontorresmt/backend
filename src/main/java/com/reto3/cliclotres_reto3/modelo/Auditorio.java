@@ -25,6 +25,7 @@ public class Auditorio implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String owner;
     private String name;
     private Integer capacity;
     private String description;
@@ -50,6 +51,14 @@ public class Auditorio implements Serializable {
         this.id = id;
     }
 
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
     public String getName() {
         return name;
     }
@@ -58,8 +67,6 @@ public class Auditorio implements Serializable {
         this.name = name;
     }
 
-
-
     public Integer getCapacity() {
         return capacity;
     }
@@ -67,6 +74,7 @@ public class Auditorio implements Serializable {
     public void setCapacity(Integer capacity) {
         this.capacity = capacity;
     }
+
     public String getDescription() {
         return description;
     }
@@ -98,7 +106,4 @@ public class Auditorio implements Serializable {
     public void setReservations(List<Reservaciones> reservations) {
         this.reservations = reservations;
     }
-
-
-
 }
