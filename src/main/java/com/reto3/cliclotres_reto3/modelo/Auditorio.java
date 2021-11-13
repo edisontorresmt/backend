@@ -25,13 +25,13 @@ public class Auditorio implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String owner;
     private String name;
+    private String owner;
     private Integer capacity;
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "Id",insertable=false,updatable = false)
+    @JoinColumn(name = "Idcategory",insertable=false,updatable = false)
     @JsonIgnoreProperties("audiences")
     private Categoria category;
 
@@ -51,13 +51,6 @@ public class Auditorio implements Serializable {
         this.id = id;
     }
 
-    public String getOwner() {
-        return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
 
     public String getName() {
         return name;
@@ -65,6 +58,13 @@ public class Auditorio implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public Integer getCapacity() {
